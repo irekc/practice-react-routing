@@ -2,11 +2,7 @@ import React from 'react';
 import { Route, useParams } from 'react-router-dom';
 
 import products from './../src/products.json';
-import Product from '../src/components/Product';
-
-const Shop = ({list}) => {
-    return list.map(p => <Product key={p.id} {...p}/>)
-}
+import Shop from '../src/components/Shop';
 
 const CategoryPage = () => {
     const {category} = useParams();
